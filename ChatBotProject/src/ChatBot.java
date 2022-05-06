@@ -34,7 +34,6 @@ public class ChatBot {
         int num4 = Integer.valueOf(input.nextLine());
         System.out.println("Subtract six");
         int num5 = Integer.valueOf(input.nextLine());
-        // int guessAge  = (((num * 5) + 3) * 2) + (num5 - 6);
         int guessAge  = num5;
         System.out.println("Based on your input, you are " + guessAge + " years old.");
         
