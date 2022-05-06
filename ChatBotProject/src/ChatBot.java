@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class ChatBot {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        greetUser();
-        greetUserRepeatName();
-        userAge();
-        countNumber();
-        testQuestion();
+        // greetUser();
+        // greetUserRepeatName();
+        // userAge();
+        // countNumber();
+        // testQuestion();
+        loveAboutWeek();
     }
 
     public static void greetUser(){
@@ -34,7 +35,6 @@ public class ChatBot {
         int num4 = Integer.valueOf(input.nextLine());
         System.out.println("Subtract six");
         int num5 = Integer.valueOf(input.nextLine());
-        // int guessAge  = (((num * 5) + 3) * 2) + (num5 - 6);
         int guessAge  = num5;
         System.out.println("Based on your input, you are " + guessAge + " years old.");
         
@@ -62,15 +62,45 @@ public class ChatBot {
         System.out.println("C. Txt");
         System.out.println("D. stringText");
         String userAnswer = input.nextLine();
-        if (userAnswer.equalsIgnoreCase("A") || userAnswer.equalsIgnoreCase("A.") || userAnswer.equals("String") || userAnswer.equalsIgnoreCase("A. String"))  {
-            System.out.println("Correct!");
-            break;
-        }   
-        else {
-            System.out.println("Incorrect. Please try again.");
+            if (userAnswer.equalsIgnoreCase("A") || userAnswer.equalsIgnoreCase("A.") || userAnswer.equals("String") || userAnswer.equalsIgnoreCase("A. String"))  
+            {
+                System.out.println("Correct!");
+                    break;
+            }   
+            else {
+                System.out.println("Incorrect. Please try again.");
             }
         }
 
+    }
+
+    public static void loveAboutWeek(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number corresponding with the day of the week. I will tell you what I like about that day.");
+        int day = Integer.valueOf(input.nextLine());
+        switch (day){
+            case 1:
+                System.out.println("Mondays are very moody for me.");
+                break;
+            case 2:
+                System.out.println("Tuesdays are terrific! It's taco Tuesday!!!");
+                break;
+            case 3:
+                System.out.println("Wednesdays are wonderful. I'm halfway through the work week!");
+                break;
+            case 4:
+                System.out.println("Thursdays are turnt-up! It's Friday Eve.");
+                break;
+            case 5:
+                System.out.println("TGIF!!!!! It's Fantastic Friday!!!");
+                break;
+            case 6:
+                System.out.println("Saturdays are my off days. They are super fun.");
+                break;
+            case 7:
+                System.out.println("Sundays are super chill but I gotta work tomorrow.");
+                break;
+        }
     }
 
 }
