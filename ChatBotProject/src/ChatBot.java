@@ -100,7 +100,7 @@ public class ChatBot {
             case 7:
                 System.out.println("Sundays are super chill but I gotta work tomorrow.");
                 break;
-        }
+            }
     }
 
 }
