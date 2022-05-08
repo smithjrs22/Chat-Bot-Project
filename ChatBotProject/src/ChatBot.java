@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class ChatBot {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        // greetUser();
-        // greetUserRepeatName();
-        // userAge();
-        // countNumber();
-        // testQuestion();
+        greetUser();
+        greetUserRepeatName();
+        userAge();
+        countNumber();
+        testQuestion();
         loveAboutWeek();
     }
 
@@ -20,7 +20,9 @@ public class ChatBot {
         Scanner input = new Scanner(System.in); 
         System.out.println("Please enter your name");
         String nameInput = input.nextLine();
-        System.out.println("Welcome " + nameInput + "!");
+        System.out.println("I did not get that. Please re-enter your name");
+        String nameInput2 = input.nextLine();
+        System.out.println("Welcome " + nameInput2 + "!");
     }
     public static void userAge(){
         Scanner input = new Scanner(System.in);
